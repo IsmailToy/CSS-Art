@@ -1,0 +1,70 @@
+.heart__left, .heart__right {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  background: rgb(255, 68, 61);
+  border-radius: 50%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(2, 100%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sphere3D {
+  position: relative;
+}
+
+.sphere {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(hsl(2, 100%, 35%), 70%, rgb(102, 3, 0));
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.3);
+}
+
+.heart {
+  position: absolute;
+  transform: rotate(45deg);
+  top: 35%;
+  left: 50%;
+}
+
+.heart__bottom {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  background: rgb(255, 68, 61);
+}
+
+.heart__left {
+  transform: translateX(-50%);
+}
+
+.heart__right {
+  transform: translateY(-50%);
+}
+
+.shadow {
+  width: 420px;
+  height: 100px;
+  background: rgba(102, 3, 0, 0.7);
+  border-radius: 50%;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: blur(13px);
+}
+
+/*# sourceMappingURL=style.css.map */

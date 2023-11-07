@@ -1,0 +1,65 @@
+@use 'basics/colors.scss';
+@use 'basics/components.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: colors.$background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sphere3D{
+    position: relative;
+}
+
+.sphere{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(colors.$base-color,70%, colors.$darkbase-color);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.3);
+}
+
+.heart{
+    position: absolute;
+    transform: rotate(45deg);
+    top: 35%;
+    left: 50%;
+}
+
+.heart__bottom{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background: colors.$heart-color;
+}
+
+.heart__left{
+    @extend %heart-top;
+    transform: translateX(-50%);
+}
+
+.heart__right{
+    @extend %heart-top;
+    transform: translateY(-50%);
+}
+
+.shadow{
+    width: 420px;
+    height: 100px;
+    background: colors.$darkbase-shadowcolor;
+    border-radius: 50%;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(13px);
+}

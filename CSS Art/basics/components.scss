@@ -1,0 +1,9 @@
+@use './colors.scss';
+
+%heart-top{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background: colors.$heart-color;
+    border-radius: 50%;
+}
